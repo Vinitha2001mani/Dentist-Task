@@ -1,0 +1,618 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: white;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    width: 200px; /* Set logo width */
+}
+
+/* Navigation Links List Styling */
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: rgb(0, 128, 255);
+}
+
+/* Button Styling */
+button {
+    background-color: rgb(0, 128, 255);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Content Section Styling */
+.intro {
+    position: relative;        /* Add position relative */
+    z-index: 1;                /* Set z-index lower than address section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.content {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.intro-btn {
+    background-color: white;
+    color: rgb(0, 128, 255);
+    padding: 10px 25px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+
+h6 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.8;
+}
+
+/* Image Styling */
+.image {
+    width: 30%;
+    
+}
+
+.image img {
+    width: 70%;
+    border-radius: 8px;
+    object-fit: cover;
+    
+}
+
+/* Address Section Styling */
+.address {
+    position: relative;        /* Position relative to allow z-index */
+    z-index: 10;               /* Set z-index higher than intro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: -50px;         /* Negative margin to bring the address section above intro */
+    margin-bottom: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Address Item Styling */
+.address-item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Label and Image Inline Styling */
+.address-item label {
+    display: flex;
+    align-items: center; /* Align image and label in one row */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Image inside the label */
+.address-item label img {
+    margin-right: 10px; /* Add space between the image and the label text */
+}
+
+/* Input Field Styling */
+.address-item input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Book Now Button Styling */
+.book-now {
+    background-color: rgb(0, 128, 255);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-now:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+.book-now img {
+    margin-right: 10px;
+}
+/* Parent Section Styling */
+.parent {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: flex-start;   
+    gap: 20px;                 
+    flex-wrap: wrap;           
+    padding: 20px;             
+}
+
+/* Child Section Styling */
+.child {
+    flex: 1;                      /* Make each child take equal width */
+    text-align: center;           /* Center the content inside each child div */
+    padding: 20px;                /* Padding inside each child */
+       
+    border-radius: 10px;          /* Optional border-radius for rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual appeal */
+    max-width: 300px;             /* Optional: limit the maximum width of each child */
+    width: 100%;                  /* Make each child div take 100% width up to the max-width */
+}
+
+/* Child Image Styling */
+.child img {
+    width: 40px;                 /* Set a specific size for the images */
+    height: 40px;
+    object-fit: cover;            /* Make sure the image fits properly */
+    margin-bottom: 15px;          /* Space between image and text */
+}
+
+/* Child Text Styling */
+.child p {
+    font-size: 16px;              /* Adjust the font size */
+    color: #333;                  /* Set the text color */
+    line-height: 1.5;             /* Adjust line-height for readability */
+}
+.child .childp1{
+    font-weight: 750;
+}
+/* Important Section Styling */
+.important {
+    display: flex;                       /* Flexbox layout for the container */
+    align-items: center;                 /* Vertically align items */
+    justify-content: space-between;      /* Space between image and content */
+    padding: 50px;                       /* Padding around the content */
+    gap: 30px;                           /* Space between image and content */
+    background-color: #f9f9f9;           /* Light background color */
+}
+
+/* Image Styling */
+.image1 {
+    width: 40%;                          /* Make the image take up 40% of the width */
+}
+
+.image1 img {
+    width: 70%;      
+    width:70%;     
+    border-radius: 8px;                  /* Optional: Add rounded corners to the image */
+}
+
+/* Content Styling */
+.content1 {
+    width: 55%;                          /* Content takes up 55% of the space */
+    display: flex;                       /* Flexbox for the content */
+    flex-direction: column;              /* Arrange content in a column */
+    justify-content: flex-start;         /* Align items to the start */
+    gap: 20px;                           /* Space between elements */
+}
+
+/* Title and Paragraph Styling */
+.content1 h6 {
+    font-size: 36px;
+    color: #333;
+}
+
+.content1 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+/* Buttons Styling */
+.buttons {
+    display: flex;                       /* Flexbox to arrange buttons */
+    gap: 20px;                           /* Space between buttons */
+    margin-top: 20px;                     /* Space above the buttons */
+    justify-content: flex-start;         /* Align buttons to the left */
+}
+
+.intro-btn{
+    
+    color: rgb(0, 128, 255);
+    padding: 12px 20px;                  /* Padding around button text */
+    font-size: 16px;                     /* Button font size */
+    border: 1px solid black;         
+    border-radius: 5px;                  /* Rounded corners */
+    cursor: pointer;                    /* Pointer cursor on hover */
+    width: 200px;                        /* Set button width */
+}
+.buttons button {
+    color: white;
+    padding: 12px 20px;                  /* Padding around button text */
+    font-size: 16px;                     /* Button font size */
+    border: none;      
+    border-radius: 5px;                  /* Rounded corners */
+    cursor: pointer;                    /* Pointer cursor on hover */
+    width: 200px;    
+    background-color: rgb(0, 128, 255);
+}
+/* General Styling for Viral Section */
+.viral {
+    display: flex;                       /* Enable flexbox */
+    justify-content: space-between;      /* Space between columns */
+    align-items: flex-start;             /* Align items at the start of the container */
+    padding: 30px;                       /* Add some padding around the container */
+    gap: 20px;                           /* Space between the columns */
+    flex-wrap: wrap;                     /* Allow wrapping if the screen is small */
+}
+
+/* Styling for Each Column */
+.column {
+    flex: 1 1 30%;                       /* Each column takes up 30% of space */
+    padding: 15px;                       /* Padding inside each column */
+    box-sizing: border-box;              /* Ensure padding doesn't affect width */
+}
+
+/* Styling for Image Column */
+.column img {
+    width: 100%;                         /* Make image take full width */
+    height: auto;                        /* Maintain aspect ratio */
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    margin-top: 20px;
+}
+
+.progress-bar label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(0, 128, 255);
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: rgb(0, 128, 255);
+    border-radius: 10px;
+}
+
+/* Styling for Buttons */
+button {
+    background-color: rgb(0, 128, 255);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.viral {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Styles for the heading and button */
+h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+button.intro-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button.intro-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Progress bar styles */
+.progress-bar {
+    margin: 10px 0;
+}
+.progress-bar label{
+    font-weight: 500;
+}
+progress {
+    width: 100%;
+    height: 10px;
+}
+
+span {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    font-weight: bold;
+}
+
+/* Image styling */
+.column img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Schedule and consultation info */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.schedule-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Button styling */
+
+
+
+
+/* Responsive Design (For screens smaller than 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        margin: 30px 10px;
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+    .parent {
+        flex-direction: column;   /* Stack children vertically on smaller screens */
+        gap: 20px;                /* Space between the child divs when stacked */
+        align-items: center;      /* Center-align the child divs */
+    }
+
+    .child {
+        max-width: 100%;          /* Allow each child to take full width */
+        width: 100%;              /* Make sure children take up full width of the parent */
+        text-align: center;       /* Keep text centered */
+    }
+
+    .child img {
+        width: 80px;              /* Adjust image size for smaller screens */
+        height: 80px;
+        margin-bottom: 10px;       /* Adjust spacing below images */
+    }
+    .important {
+        flex-direction: column;          /* Stack image and content on smaller screens */
+        align-items: center;             /* Center content */
+    }
+
+    .image1 {
+        width: 80%;                      /* Make the image take 80% on small screens */
+    }
+
+    .content1 {
+        width: 100%;                     /* Content takes full width on small screens */
+        text-align: center;              /* Center-align text */
+    }
+
+    .buttons {
+        flex-direction: column;          /* Stack buttons vertically on mobile */
+        align-items: center;             /* Center-align buttons */
+    }
+
+    .buttons button {
+        width: 100%;                     /* Buttons take full width on mobile */
+        margin-top: 10px;                 /* Add space between buttons */
+    }
+   
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%;             /* Ensure buttons take full width */
+    }
+
+    .buttons button {
+        width: 100%;             /* Make buttons take full width on mobile */
+    }
+    .viral {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .schedule {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button.intro-btn {
+        width: 100%;
+    }
+
+    /* Stack schedule items vertically on smaller screens */
+    .schedule-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* Responsive Design (For screens smaller than 480px) */
+@media (max-width: 480px) {
+    .child {
+        padding: 15px;            /* Adjust padding for smaller screens */
+    }
+
+    .child img {
+        width: 70px;              /* Smaller image size for even smaller screens */
+        height: 70px;
+    }
+
+    .child p {
+        font-size: 12px;          /* Further reduce font size for small screens */
+    }
+    .viral {
+        margin: 10px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .column img {
+        max-width: 80%;
+    }
+
+    .schedule p {
+        font-size: 14px;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+}
